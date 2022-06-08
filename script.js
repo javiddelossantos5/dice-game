@@ -1,9 +1,6 @@
 'use strict';
 
 // Selecting Elements
-const player0El = document.querySelector('.player--0');
-const player1El = document.querySelector('.player--1');
-
 const score0El = document.querySelector('#score--0');
 const score1El = document.querySelector('#score--1');
 
@@ -64,7 +61,7 @@ btnHold.addEventListener('click', () => {
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
     // Check if player's score >= 100
-    if (scores[activePlayer] >= 20) {
+    if (scores[activePlayer] >= 100) {
       // Finish The game
       playing = false;
       diceEl.classList.add('hidden');
